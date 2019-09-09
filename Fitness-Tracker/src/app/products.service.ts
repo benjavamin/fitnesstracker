@@ -1,4 +1,4 @@
-import { Subject} from 'rxjs';
+import { Subject } from 'rxjs';
 
 export class ProductsService {
   private products = ['A Book', 'A Tree', 'A Bike'];
@@ -13,7 +13,7 @@ export class ProductsService {
     return [...this.products];
   }
 
-  delete(productName: string) {
+  deleteProduct(productName: string) {
     this.products = this.products.filter(p => p !== productName);
     this.productsUpdated.next();
   }

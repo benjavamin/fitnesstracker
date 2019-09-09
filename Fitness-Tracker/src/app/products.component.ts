@@ -11,7 +11,7 @@ export class ProductsComponent implements OnInit, OnDestroy {
 
   productName = 'A book';
   isDisabled = true;
-  products = ['A Book', 'A Tree', 'A tent'];
+  products = [];
   private productsSubscription: Subscription;
 
   constructor(private productsService: ProductsService) {
